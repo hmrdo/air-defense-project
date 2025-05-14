@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -23,6 +24,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .team-member:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         .team-member img {
             width: 120px;
@@ -39,15 +47,14 @@
             font-size: 0.9em;
             color: #666;
         }
-        .team-member a {
-            display: inline-block;
-            margin-top: 5px;
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
+               /* Style the main heading on this page like the header title */
+        .container h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
-        .team-member a:hover {
-            text-decoration: underline;
+        .container h3 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
     </style>
 </head>
@@ -76,30 +83,66 @@
     <!-- Team Section -->
     <div class="container mt-4">
         <h2 class="text-center">Meet Our Team</h2>
+        <h3 class="text-center"> (click us to hire us!)</h3>
         <div class="team-container">
 
             <!-- Team Member 1 -->
-            <div class="team-member">
-                <img src="../image/profile1.jpg" alt="George Tzimpragos">
-                <h4>George Tzimpragos</h4>
-                <p><strong>Role:</strong> Assistant Professor </p>
-                <p>Likes to think his lectures are interesting. Came up with the idea and wrote a grant for it to secure funding.
-                  Thinks the Ministry of Feline Affairs unjustly denied his grant.
+            <a class="team-member" href="https://www.linkedin.com/in/sam-cooper12/" target="_blank">
+                <img src="../image/sam-cooper.jpeg" alt="Samuel Cooper">
+                <h4>Samuel Cooper</h4>
+                <p><strong>Role:</strong> Image Processing & Laser/Camera Implementation </p>
+                <p>
+                    2.7k hour rust gigachad. Main servers include helix 2x monthly main, rustinity 2x quad,
+                    reddit us monthly main. Enjoys building, pvp, and GRIEFING clans.
                 </p>
-                <a href="https://www.linkedin.com/in/gtzimpragos" target="_blank">LinkedIn Profile</a>
-            </div>
+            </a>
 
             <!-- Team Member 2 -->
-            <div class="team-member">
-                <img src="../image/profile2.jpg" alt="Abhishek Bhattacharyya">
-                <h4>Abhishek Bhattacharyya</h4>
-                <p><strong>Role:</strong> Teaching Assistant </p>
-                <p>Pretends to help students during labs. Thinks the project will help his academic profile.
-                  Also has no idea how to do anything in the project.
+            <a class="team-member" href="https://www.linkedin.com/in/hmrdoll/" target="_blank">
+                <img src="../image/harrison-doll.jpg" alt="Harrison Doll">
+                <h4>Harrison Doll</h4>
+                <p><strong>Role:</strong> Image Processing & Laser/Camera Implementation </p>
+                <p> 
+                    Frequently enjoys the luxury of being rejected by every single job applied to on the planet. Loves to sit in silence in his room,
+                    contemplating what went wrong when the coding homework assigned doesn't work. Also likes cats and spending money on 95% off games on Steam and letting them
+                    rot in his game library.
                 </p>
-                <a href="https://www.linkedin.com/in/abhatta4" target="_blank">LinkedIn Profile</a>
-            </div>
+            </a>
 
+            <!-- Team Member 3 -->
+            <a class="team-member" href="https://www.linkedin.com/in/jake-neau/" target="_blank">
+                <img src="../image/jake-neau.jpeg" alt="Jake Neau">
+                <h4>Jake Neau</h4>
+                <p><strong>Role:</strong> Targeting Processor Configuration </p>
+                <p> 
+                    Thinks he had an AMD internship - it's just a figment of his imagination. In his free time, he likes to watch the wax melt from burning
+                    15 candles at once in his living room. At first, his neighbors complained because the hallway smelled like smoke, but now they've grown to
+                    appreciate his home-made candle scents.
+                </p>
+            </a>
+
+            <!-- Team Member 4 -->
+            <a class="team-member" href="https://www.linkedin.com/in/cullen-krasselt-28236b1a9/" target="_blank">
+                <img src="../image/cullen-krasselt.jpeg" alt="Cullen Krasselt">
+                <h4>Cullen Krasselt</h4>
+                <p><strong>Role:</strong> Mount Interfacing & Control Modules </p>
+                <p>
+                    Has the unique ability to do math on the team. This is incredibly important, rare for the ever-estimating engineer, and useful for object detection. 
+                    Also known as the prolific ECE goblin, and I'm not sure what that means, but do NOT ask him about it. 
+                </p>
+            </a>
+
+            <!-- Team Member 5 -->
+            <a class="team-member" href="https://www.linkedin.com/in/nathanwoolf002/" target="_blank">
+                <img src="../image/nathan-woolf.jpeg" alt="Nathan Woolf">
+                <h4>Nathan Woolf</h4>
+                <p><strong>Role:</strong> Motor Mount Design & FPGA Interface </p>
+                <p>
+                    Is a part of the 'Engineers without Borders' club at UW-Madison. But so far, everyone has only seen him WITHIN the borders of 
+                    the UW campus. A coincidence? I think not. He brings a certain amount of caffeinated skill that is appreciated by the team. Ask him
+                    any questions about CS-552, the computer architecture class here - he LOVED it.
+                </p>
+            </a>
         </div>
     </div>
 
